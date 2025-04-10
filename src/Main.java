@@ -9,7 +9,7 @@ public class Main {
         do {
             System.out.println("\n--- Menú ---");
             System.out.println("1. Encolar número entero");
-            System.out.println("2. Desencolar");
+            System.out.println("2. Desencolar elemento");
             System.out.println("3. Ver frente");
             System.out.println("4. Mostrar cola");
             System.out.println("0. Salir");
@@ -33,7 +33,7 @@ public class Main {
                         System.out.println("Número agregado a la cola.");
                         cola.imprimirCola(); // Mostrar la cola
                     } else {
-                        System.out.println("❌ Error: Solo se permiten números enteros.");
+                        System.out.println("Error: Solo se permiten números enteros.");
                         scanner.nextLine(); // descartar entrada inválida
                     }
                     break;
@@ -73,3 +73,4 @@ public class Main {
         scanner.close();
     }
 }
+//holaaa

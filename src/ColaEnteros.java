@@ -19,7 +19,7 @@ public class ColaEnteros {
 
     public int desencolar() {
         if (estaVacia()) {
-            throw new RuntimeException("❌ La cola está vacía.");
+            throw new RuntimeException("La cola está vacía.");
         }
         int dato = frente.dato;
         frente = frente.siguiente;
@@ -31,7 +31,7 @@ public class ColaEnteros {
 
     public int verFrente() {
         if (estaVacia()) {
-            throw new RuntimeException("❌ La cola está vacía.");
+            throw new RuntimeException("La cola está vacía.");
         }
         return frente.dato;
     }
@@ -43,11 +43,11 @@ public class ColaEnteros {
     public void imprimirCola() {
         nodo actual = frente;
         if (actual == null) {
-            System.out.println("🌀 Cola vacía.");
+            System.out.println("Cola vacía.");
             return;
         }
 
-        System.out.print("🌀 Cola actual: ");
+        System.out.print("Cola actual: ");
         while (actual != null) {
             System.out.print(actual.dato + " ");
             actual = actual.siguiente;
